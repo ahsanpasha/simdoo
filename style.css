@@ -610,3 +610,10 @@ nav {
         font-size: 1.3rem;
     }
 }
+
+@media (min-width: 1920px) {
+    .maintext {
+        font-size: 9rem !important;
+        /* Exact 90px */
+    }
+}
