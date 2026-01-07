@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIM d.o.o. - Precizna CNC Proizvodnja</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Sora:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="container top-bar-content">
+                <div class="logo">
+                    <img src="logo.svg" alt="SIM d.o.o. Logo">
+                </div>
+                <div class="mainspace">
+                    <div class="email-info">
+                        <img src="email.svg" alt="Email Icon">
+                        <div class="emailll">
+                            <span class="email-label">Email:</span>
+                            <a href="mailto:info@sim.hr" class="email-value">info@sim.hr</a>
+                        </div>
+                    </div>
+                    <img src="line.svg" alt="Line">
+                    <div class="email-info">
+                        <img src="email.svg" alt="Email Icon">
+                        <div class="emailll">
+                            <span class="email-label">Telefon:</span>
+                            <a href="mailto:info@sim.hr" class="email-value">+385 (0)XX XXX XXXX</a>
+                        </div>
+                    </div>
+                    <img src="line.svg" alt="Line">
+                    <div class="email-info">
+                        <img src="email.svg" alt="Email Icon">
+                        <div class="emailll">
+                            <span class="email-label">Adresa:</span>
+                            <a href="mailto:info@sim.hr" class="email-value">Ulica 108. brigade ZNG 74, 35000</br>
+                                Slavonski
+                                Brod, Hrvatska</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container nav-content">
+
+
+                <div class="logo mobile-logo">
+                    <img src="logo.svg" alt="SIM d.o.o. Logo">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#">Naslovna</a></li>
+                    <li><a href="#">O Nama</a></li>
+                    <li><a href="#">Usluge</a></li>
+                    <li><a href="#">Proizvodi</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+                <button class="contactus">Contact Us
+                    <img src="arrow.svg" alt="Arrow" />
+                </button>
+                <button id="menu-toggle" class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="drawer-overlay" id="drawer-overlay"></div>
+    <div class="side-drawer" id="side-drawer">
+        <div class="drawer-header">
+            <button class="close-drawer" id="close-drawer">&times;</button>
+        </div>
+        <div class="drawer-content">
+            <ul class="drawer-links">
+                <li><a href="#">Naslovna</a></li>
+                <li><a href="#">O Nama</a></li>
+                <li><a href="#">Usluge</a></li>
+                <li><a href="#">Proizvodi</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+            <button class="drawer-contactus">Contact Us
+                <img src="arrow.svg" alt="Arrow" />
+            </button>
+            <div class="drawer-contact-info">
+                <div class="email-info">
+                    <img src="email.svg" alt="Email Icon">
+                    <div class="emailll">
+                        <span class="email-label">Email:</span>
+                        <a href="mailto:info@sim.hr" class="email-value">info@sim.hr</a>
+                    </div>
+                </div>
+                <div class="email-info">
+                    <img src="email.svg" alt="Email Icon">
+                    <div class="emailll">
+                        <span class="email-label">Telefon:</span>
+                        <a href="mailto:info@sim.hr" class="email-value">+385 (0)XX XXX XXXX</a>
+                    </div>
+                </div>
+                <div class="email-info">
+                    <img src="email.svg" alt="Email Icon">
+                    <div class="emailll">
+                        <span class="email-label">Adresa:</span>
+                        <a href="mailto:info@sim.hr" class="email-value">Ulica 108. brigade ZNG 74, 35000 Slavonski
+                            Brod, Hrvatska</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1 class="maintext">Precizna CNC Proizvodnja na<br /> Koju Možete Računati</h1>
+                <p class="maintextheading">Visokokvalitetna obrada, proizvodnja metalnih dijelova i inženjerska rješenja
+                    s točnošću,<br /> pouzdanošću
+                    i modernom tehnologijom.</p>
+                <div class="hero-btns">
+                    <button class="twobutton">Pogledajte Naše Usluge<img src="buttonarrow.svg" alt="Arrow"></button>
+                    <button class="twobutton1">Zatražite ponudu</button>
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const sideDrawer = document.getElementById('side-drawer');
+        const closeDrawer = document.getElementById('close-drawer');
+        const drawerOverlay = document.getElementById('drawer-overlay');
+
+        function toggleDrawer() {
+            sideDrawer.classList.toggle('active');
+            drawerOverlay.classList.toggle('active');
+            document.body.classList.toggle('drawer-open');
+            document.body.style.overflow = sideDrawer.classList.contains('active') ? 'hidden' : '';
+        }
+
+        menuToggle.addEventListener('click', toggleDrawer);
+        closeDrawer.addEventListener('click', toggleDrawer);
+        drawerOverlay.addEventListener('click', toggleDrawer);
+
+        // Close drawer when clicking a link
+        const drawerLinks = document.querySelectorAll('.drawer-links a');
+        drawerLinks.forEach(link => {
+            link.addEventListener('click', toggleDrawer);
+        });
+    </script>
+</body>
+
+</html>
