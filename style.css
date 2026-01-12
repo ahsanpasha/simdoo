@@ -1,8 +1,9 @@
 /* Custom AOS fade animation for extra smoothness */
+
 [data-aos] {
     transition-property: opacity, transform;
     transition-timing-function: ease-in-out;
-    transition-duration: 1.5s !important;
+    transition-duration: 0.9s !important;
 }
 
 .aos-animate {
