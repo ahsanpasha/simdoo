@@ -1,3 +1,67 @@
+/* Montserrat Font */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/montserrat/Montserrat-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/montserrat/Montserrat-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/montserrat/Montserrat-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/montserrat/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Clash Display Font */
+@font-face {
+    font-family: 'Clash Display';
+    src: url('fonts/ClashDisplay-Regular.woff2') format('woff2'),
+        url('fonts/ClashDisplay-Regular.woff') format('woff'),
+        url('fonts/ClashDisplay-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Clash Display';
+    src: url('fonts/ClashDisplay-Medium.woff2') format('woff2'),
+        url('fonts/ClashDisplay-Medium.woff') format('woff'),
+        url('fonts/ClashDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Clash Display';
+    src: url('fonts/ClashDisplay-Semibold.woff2') format('woff2'),
+        url('fonts/ClashDisplay-Semibold.woff') format('woff'),
+        url('fonts/ClashDisplay-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     --primary-color: #2E6091;
     --secondary-color: #2E6091;
@@ -137,7 +201,6 @@ nav {
 
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-style: Medium;
     font-size: 20px;
     line-height: 2rem;
     letter-spacing: 0%;
@@ -470,7 +533,6 @@ nav {
 .onamatext {
     font-family: Montserrat;
     font-weight: 600;
-    font-style: SemiBold;
     font-size: 24px;
     leading-trim: NONE;
     line-height: 55px;
@@ -483,7 +545,6 @@ nav {
 .simdooinzen {
     font-family: Clash Display;
     font-weight: 500;
-    font-style: Medium;
     font-size: 45px;
     leading-trim: NONE;
     line-height: 53px;
@@ -496,7 +557,6 @@ nav {
 .tvrtka {
     font-family: Montserrat;
     font-weight: 400;
-    font-style: Regular;
     font-size: 20px;
     leading-trim: NONE;
     line-height: 30px;
@@ -520,7 +580,6 @@ nav {
     background-color: #2E6091;
     font-family: Montserrat;
     font-weight: 500;
-    font-style: Medium;
     font-size: 20px;
     leading-trim: NONE;
     line-height: 20.56px;
@@ -560,7 +619,6 @@ nav {
 .uslugetext {
     font-family: Montserrat;
     font-weight: 600;
-    font-style: SemiBold;
     font-size: 25px;
     leading-trim: NONE;
     line-height: 120%;
@@ -573,7 +631,6 @@ nav {
 .nasitext {
     font-family: Clash Display;
     font-weight: 500;
-    font-style: Medium;
     font-size: 45px;
     leading-trim: NONE;
     line-height: 53px;
@@ -586,7 +643,6 @@ nav {
 .koristimo {
     font-family: Montserrat;
     font-weight: 400;
-    font-style: Regular;
     font-size: 20px;
     leading-trim: NONE;
     line-height: 30px;
@@ -608,7 +664,6 @@ nav {
 .cncglodanje {
     font-family: Clash Display;
     font-weight: 600;
-    font-style: Semibold;
     font-size: 32px;
     leading-trim: NONE;
     line-height: 32.86px;
@@ -623,10 +678,19 @@ nav {
     align-items: end;
     justify-content: center;
     height: 100%;
-    background-image: url("firstimgthirdsec.jpg");
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 46.63%, rgba(0, 0, 0, 0.7) 79.81%), url("firstimgthirdsec.jpg") center/cover no-repeat;
     padding-bottom: 40px;
+    transition: all 0.3s ease;
+}
+
+.updownfirstdiv:hover .updownfirstdivtextdd {
+    background: linear-gradient(0deg, rgba(236, 246, 255, 0.48), rgba(236, 246, 255, 0.48)),
+        linear-gradient(0deg, rgba(236, 246, 255, 0.33), rgba(236, 246, 255, 0.33)),
+        url("firstimgthirdsec.jpg") center/cover no-repeat;
+}
+
+.updownfirstdiv:hover .cncglodanje {
+    color: #2E6091;
 }
 
 .updowndivthree {
@@ -648,7 +712,6 @@ nav {
 .proizvoditext {
     font-family: Montserrat;
     font-weight: 600;
-    font-style: SemiBold;
     font-size: 24px;
     leading-trim: NONE;
     line-height: 26px;
@@ -662,7 +725,6 @@ nav {
 .komponentetext {
     font-family: Clash Display;
     font-weight: 500;
-    font-style: Medium;
     font-size: 45px;
     leading-trim: NONE;
     line-height: 53px;
@@ -687,6 +749,166 @@ nav {
     max-width: 1128px;
 }
 
+.Industrijskediv {
+    width: 341.1673889160156px;
+
+    border-radius: 8.29px;
+    border: 1.66px solid #00000017;
+    box-shadow: 0px 7.14px 26.79px 0px #00000014;
+    background-color: #2E6091;
+}
+
+.machineimg {
+    width: 100%;
+    height: 255.2177734375px;
+    border-top-left-radius: 16.39px;
+    border-top-right-radius: 16.39px;
+    background-color: #FFFFFF;
+    object-fit: contain;
+}
+
+.industrijsketextbox {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 24px;
+    leading-trim: NONE;
+    line-height: 26px;
+    letter-spacing: 2px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.machinedivvv {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.machineeediv {
+    padding: 10.35px 8.93px 0px 9.49px;
+}
+
+.fifthsec {
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+
+    background-image:
+        linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+        linear-gradient(0deg, rgba(46, 96, 145, 0.75), rgba(46, 96, 145, 0.75)),
+        url("contactbg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.iskoristitetext {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 20px;
+    leading-trim: NONE;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #FFFFFF;
+    max-width: 1128px;
+}
+
+.kontacttext {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 24px;
+    leading-trim: NONE;
+    line-height: 24px;
+    letter-spacing: 2px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+}
+
+.tehnickatexttt {
+    font-family: Clash Display;
+    font-weight: 500;
+    font-size: 50px;
+    leading-trim: NONE;
+    line-height: 53px;
+    letter-spacing: 1%;
+    text-align: center;
+    vertical-align: middle;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.sixthsec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 33px 90px 20px 90px;
+}
+
+.footerlinks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+
+}
+
+.footerlink {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 20px;
+    leading-trim: CAP_HEIGHT;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #000000;
+}
+
+.mainbr {
+    width: 100%;
+    border: 1px solid #000000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    opacity: 0.2;
+}
+
+.copyrighttext {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    leading-trim: CAP_HEIGHT;
+    line-height: 27px;
+    letter-spacing: 4%;
+    color: #000000;
+}
+
+.footerdivvvvvvvvvvv {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding-left: 63px;
+    padding-right: 63px;
+    align-items: center;
+    justify-content: space-between;
+}
 
 /* Responsive */
 @media (max-width: 1200px) {
