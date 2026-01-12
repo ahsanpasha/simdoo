@@ -382,6 +382,20 @@ nav {
     flex-wrap: wrap;
 }
 
+.nav-links a,
+.footerlink,
+.email-value {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.nav-links a:hover,
+.footerlink:hover,
+.email-value:hover {
+    color: #2E6091;
+    transform: translateY(-2px);
+}
+
 /* Side Drawer */
 .drawer-overlay {
     position: fixed;
@@ -475,6 +489,19 @@ nav {
     color: #FFFFFF;
     border: none;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.drawer-contactus:hover {
+    transform: scale(1.05);
+    background-color: #20456b;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.drawer-contactus:hover {
+    transform: scale(1.05);
+    background-color: #20456b;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .drawer-contact-info {
@@ -535,7 +562,7 @@ nav {
     font-weight: 600;
     font-size: 24px;
     leading-trim: NONE;
-    line-height: 55px;
+    line-height: 24px;
     letter-spacing: 2px;
     vertical-align: middle;
     text-transform: uppercase;
@@ -571,7 +598,6 @@ nav {
     max-width: 357px;
     height: 56px;
     gap: 22px;
-
     border-radius: 500px;
     display: flex;
     align-items: center;
@@ -923,7 +949,89 @@ nav {
     height: auto;
 }
 
+@media (max-width: 1800px) {
+    .secsec {
+        padding: 40px 50px 60px 50px;
+        gap: 80px;
+    }
+
+    .secsecimg {
+        height: auto;
+        width: 750px;
+    }
+}
+
+
+@media (max-width: 1600px) {
+    .secsec {
+        padding: 40px 50px 60px 50px;
+        gap: 40px;
+    }
+
+    .tvrtka,
+    .koristimo,
+    .simdooproizvoditext,
+    .iskoristitetext {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .Saznajtebtn {
+        font-size: 16px;
+        width: 100%;
+        max-width: 280px;
+        height: 50px;
+    }
+
+    .secdivsec {
+        gap: 12px;
+    }
+
+    .simdooinzen,
+    .nasitext,
+    .komponentetext,
+    .tehnickatexttt {
+        font-size: 40px;
+    }
+
+    .onamatext {
+        font-size: 20px;
+    }
+
+    .secsecimg {
+        height: auto;
+        width: 600px;
+    }
+}
+
 /* Responsive */
+@media (max-width: 1440px) {
+    .thirdsec {
+        padding: 60px 3%;
+        gap: 20px;
+    }
+
+    .updowndivthree {
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .updownfirstdiv {
+        width: 32%;
+        max-width: 100%;
+        height: auto;
+        min-height: 450px;
+    }
+}
+
+@media (max-width:1300px) {
+    .secsecimg {
+        height: auto;
+        width: 500px;
+    }
+
+}
+
 @media (max-width: 1200px) {
     .maintext {
         margin-bottom: 3rem;
