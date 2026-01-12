@@ -1,3 +1,17 @@
+/* Custom AOS fade animation for extra smoothness */
+[data-aos] {
+    transition-property: opacity, transform;
+    transition-timing-function: ease-in-out;
+    transition-duration: 1.5s !important;
+}
+
+.aos-animate {
+    opacity: 1 !important;
+}
+
+[data-aos][data-aos][data-aos-delay] {
+    transition-delay: var(--aos-delay, 0ms) !important;
+}
 /* Montserrat Font */
 @font-face {
     font-family: 'Montserrat';
