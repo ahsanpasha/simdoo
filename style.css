@@ -301,7 +301,7 @@ nav {
 .maintext {
     font-family: 'Clash Display', sans-serif;
     font-weight: 500;
-    font-size: clamp(3.2rem, 7vw, 9rem);
+    font-size: 90px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     text-align: center;
@@ -315,7 +315,7 @@ nav {
 .maintextheading {
     font-family: Montserrat;
     font-weight: 500;
-    font-size: clamp(1.6rem, 2vw, 2rem);
+    font-size: 20px;
     line-height: 1.5;
     text-align: center;
     text-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.5);
@@ -567,7 +567,8 @@ nav {
 }
 
 .Saznajtebtn {
-    width: 357px;
+    width: 100%;
+    max-width: 357px;
     height: 56px;
     gap: 22px;
 
@@ -608,11 +609,12 @@ nav {
 .updownfirstdiv {
     background-color: #FFFFFF21;
     box-shadow: 0px 8.15px 30.54px 0px #00000014;
-    height: 100%;
+    height: 450px;
     margin-top: 11px;
     margin-bottom: 11px;
     border-radius: 15px;
     width: 395px;
+    max-width: 395px;
     padding: 10px;
 }
 
@@ -620,7 +622,6 @@ nav {
     font-family: Montserrat;
     font-weight: 600;
     font-size: 25px;
-    leading-trim: NONE;
     line-height: 120%;
     letter-spacing: 8%;
     vertical-align: middle;
@@ -665,7 +666,6 @@ nav {
     font-family: Clash Display;
     font-weight: 600;
     font-size: 32px;
-    leading-trim: NONE;
     line-height: 32.86px;
     letter-spacing: 3%;
     text-align: center;
@@ -740,7 +740,6 @@ nav {
     margin-top: 6px;
     font-style: Regular;
     font-size: 20px;
-    leading-trim: NONE;
     line-height: 30px;
     letter-spacing: 0%;
     text-align: center;
@@ -750,7 +749,8 @@ nav {
 }
 
 .Industrijskediv {
-    width: 341.1673889160156px;
+    width: 100%;
+    max-width: 341.1673889160156px;
 
     border-radius: 8.29px;
     border: 1.66px solid #00000017;
@@ -844,7 +844,6 @@ nav {
     font-family: Clash Display;
     font-weight: 500;
     font-size: 50px;
-    leading-trim: NONE;
     line-height: 53px;
     letter-spacing: 1%;
     text-align: center;
@@ -874,7 +873,6 @@ nav {
     font-family: Montserrat;
     font-weight: 500;
     font-size: 20px;
-    leading-trim: CAP_HEIGHT;
     line-height: 20px;
     letter-spacing: 0%;
     text-align: center;
@@ -894,7 +892,6 @@ nav {
     font-weight: 500;
     font-size: 18px;
     text-align: center;
-    leading-trim: CAP_HEIGHT;
     line-height: 27px;
     letter-spacing: 4%;
     color: #000000;
@@ -910,19 +907,73 @@ nav {
     justify-content: space-between;
 }
 
+.footerdivvvvvvvvvvv img {
+    width: 24px;
+    height: auto;
+}
+
+.logo img,
+.mobile-logo img {
+    max-width: 140px;
+    height: auto;
+}
+
+.updown img {
+    width: 40px;
+    height: auto;
+}
+
 /* Responsive */
 @media (max-width: 1200px) {
     .maintext {
         margin-bottom: 3rem;
+        font-size: 70px;
     }
 
-    .maintext {
-        font-size: 60px
+    .secsec img {
+        max-width: 450px;
     }
 
     .hero {
         padding: 12rem 0 20rem;
         min-height: auto;
+    }
+
+    /* Second Section (About) */
+    .secsec {
+        padding: 4rem 5%;
+        gap: 5rem;
+    }
+
+    /* Third Section (Services) */
+    .thirdsec {
+        padding: 6rem 5%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .uslugediv {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .nasitext,
+    .koristimo {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .updowndivthree {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .updownfirstdiv {
+        width: 45%;
+        max-width: 395px;
     }
 }
 
@@ -934,7 +985,12 @@ nav {
     }
 
     .maintext {
-        font-size: 45px
+        font-size: 55px;
+    }
+
+    .secsec img {
+        max-width: 400px;
+        height: auto;
     }
 
     .contact-info {
@@ -949,6 +1005,63 @@ nav {
     .nav-links a {
         font-size: 1.8rem;
     }
+
+    /* Second Section (About) */
+    .secsec {
+        flex-direction: column;
+        text-align: center;
+        padding: 4rem 2rem;
+    }
+
+    .secdivsec {
+        align-items: center;
+    }
+
+    .secsec img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+
+    .Saznajtebtn {
+        width: 100%;
+        max-width: 357px;
+    }
+
+    /* Fourth Section (Products) */
+    .fourthsec {
+        padding: 4rem 2rem;
+    }
+
+    .machinedivvv {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .Industrijskediv {
+        width: calc(50% - 1rem);
+        min-width: 300px;
+    }
+
+    .simdooproizvoditext {
+        width: 100%;
+    }
+
+    /* Sixth Section (Footer) */
+    .footerdivvvvvvvvvvv {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .footerlinks {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .secsec img {
+        max-width: 400px;
+        height: auto;
+    }
 }
 
 @media (max-width: 768px) {
@@ -962,7 +1075,6 @@ nav {
 
     .top-bar {
         display: none;
-        /* Hide top bar on mobile */
     }
 
     .desktop-logo {
@@ -988,12 +1100,10 @@ nav {
     .nav-links,
     .contactus {
         display: none;
-        /* Hide main nav links and contact button */
     }
 
     .menu-toggle {
         display: block;
-        /* Show menu toggle */
         color: #FFFFFF;
     }
 
@@ -1006,6 +1116,7 @@ nav {
     .maintext {
         width: 100%;
         margin-bottom: 2rem;
+        font-size: 3.5rem;
     }
 
     .maintext br {
@@ -1047,11 +1158,67 @@ nav {
         padding: 1.5rem 2rem;
         font-size: 2rem;
     }
+
+    /* Third Section (Services) adjustment */
+    .thirdsec {
+        flex-direction: column;
+        padding: 4rem 2rem;
+    }
+
+    .updownfirstdiv {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .updowndivthree {
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    /* Fourth Section (Products) adjustment */
+    .Industrijskediv {
+        width: 100%;
+    }
+
+    .updownfirstdiv {
+        width: 100%;
+        max-width: 395px;
+        height: auto;
+        min-height: 450px;
+    }
+
+    /* Fifth Section (Contact) */
+    .fifthsec {
+        padding: 4rem 2rem;
+    }
+
+    .tehnickatexttt {
+        font-size: 35px;
+        line-height: 1.2;
+    }
+
+    .simdooinzen {
+        font-size: 35px;
+    }
+
+    .secsec img {
+        max-width: 350px;
+    }
+
+    .iskoristitetext {
+        font-size: 1.6rem;
+    }
 }
 
 @media (max-width: 480px) {
     .nav-links {
         gap: 1.5rem;
+    }
+
+    .logo img,
+    .mobile-logo img {
+        max-width: 120px;
     }
 
     .nav-links a {
@@ -1067,11 +1234,138 @@ nav {
     .email-value {
         font-size: 1.3rem;
     }
+
+    /* General Typography Scaling */
+    .maintext {
+        font-size: 3rem;
+    }
+
+    .simdooinzen,
+    .nasitext,
+    .komponentetext,
+    .tehnickatexttt {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .onamatext,
+    .uslugetext,
+    .proizvoditext,
+    .kontacttext {
+        font-size: 18px;
+    }
+
+    .tvrtka,
+    .koristimo,
+    .simdooproizvoditext,
+    .iskoristitetext {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .secsec img {
+        max-width: 280px;
+    }
+
+    .machineimg {
+        height: auto;
+        max-height: 200px;
+    }
+
+    /* Section Spacing */
+    .secsec,
+    .thirdsec,
+    .fourthsec,
+    .fifthsec,
+    .sixthsec {
+        padding: 3rem 1.5rem;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 6rem 0 8rem;
+    }
+
+    /* Footer */
+    .footerlinks {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .footerdivvvvvvvvvvv {
+        padding: 0;
+    }
+}
+
+@media (max-width: 360px) {
+    .maintext {
+        font-size: 28px;
+    }
+
+    .simdooinzen {
+        font-size: 24px;
+    }
+
+    .secsec img {
+        max-width: 200px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .Saznajtebtn {
+        padding: 1.5rem 1rem;
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .updown img {
+        width: 20px;
+        height: auto;
+    }
+
+    .updownfirstdiv {
+        height: auto;
+        min-height: auto;
+        width: 100%;
+    }
+
+    .nasitext,
+    .komponentetext,
+    .tehnickatexttt {
+        font-size: 24px;
+    }
+
+    .onamatext,
+    .uslugetext,
+    .proizvoditext {
+        font-size: 16px;
+    }
+
+    .tvrtka,
+    .koristimo {
+        font-size: 14px;
+    }
+
+    /* Reduce padding for ultra small screens */
+    .secsec,
+    .thirdsec,
+    .fourthsec,
+    .fifthsec {
+        padding: 3rem 1rem;
+    }
+
+    .logo img,
+    .mobile-logo img {
+        max-width: 100px;
+    }
+
+    .fifthsec {
+        background-position: top center;
+    }
 }
 
 @media (min-width: 1920px) {
     .maintext {
         font-size: 9rem !important;
-        /* Exact 90px */
     }
 }
