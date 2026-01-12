@@ -452,6 +452,242 @@ nav {
     z-index: 3;
 }
 
+.secsec {
+    padding: 52px 98px 106px 147px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 102px;
+}
+
+.secdivsec {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.onamatext {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 24px;
+    leading-trim: NONE;
+    line-height: 55px;
+    letter-spacing: 2px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #2E6091;
+}
+
+.simdooinzen {
+    font-family: Clash Display;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 45px;
+    leading-trim: NONE;
+    line-height: 53px;
+    letter-spacing: 1%;
+    vertical-align: middle;
+    color: #000000;
+    margin-bottom: 6px;
+}
+
+.tvrtka {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    leading-trim: NONE;
+    line-height: 30px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.Saznajtebtn {
+    width: 357px;
+    height: 56px;
+    gap: 22px;
+
+    border-radius: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    border: none;
+    background-color: #2E6091;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    leading-trim: NONE;
+    line-height: 20.56px;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.thirdsec {
+    padding: 100px 117.5px 94px 147.5px;
+    background-color: #203F5E;
+    display: flex;
+    flex-direction: row;
+    gap: 39px;
+}
+
+.uslugediv {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+
+}
+
+.updownfirstdiv {
+    background-color: #FFFFFF21;
+    box-shadow: 0px 8.15px 30.54px 0px #00000014;
+    height: 100%;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    border-radius: 15px;
+    width: 395px;
+    padding: 10px;
+}
+
+.uslugetext {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 25px;
+    leading-trim: NONE;
+    line-height: 120%;
+    letter-spacing: 8%;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.nasitext {
+    font-family: Clash Display;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 45px;
+    leading-trim: NONE;
+    line-height: 53px;
+    letter-spacing: 1%;
+    vertical-align: middle;
+    color: #FFFFFF;
+    max-width: 353px;
+}
+
+.koristimo {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    leading-trim: NONE;
+    line-height: 30px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #FFFFFF;
+    max-width: 313px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+}
+
+.updown {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+.cncglodanje {
+    font-family: Clash Display;
+    font-weight: 600;
+    font-style: Semibold;
+    font-size: 32px;
+    leading-trim: NONE;
+    line-height: 32.86px;
+    letter-spacing: 3%;
+    text-align: center;
+    vertical-align: middle;
+    color: #FFFFFF;
+}
+
+.updownfirstdivtextdd {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    height: 100%;
+    background-image: url("firstimgthirdsec.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 40px;
+}
+
+.updowndivthree {
+    display: flex;
+    flex-direction: row;
+    gap: 31px;
+}
+
+
+.fourthsec {
+    padding: 79px 71px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+}
+
+.proizvoditext {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 24px;
+    leading-trim: NONE;
+    line-height: 26px;
+    letter-spacing: 2px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #2E6091;
+}
+
+.komponentetext {
+    font-family: Clash Display;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 45px;
+    leading-trim: NONE;
+    line-height: 53px;
+    letter-spacing: 1%;
+    text-align: center;
+    vertical-align: middle;
+    color: #000000;
+}
+
+.simdooproizvoditext {
+    font-family: Montserrat;
+    font-weight: 400;
+    margin-top: 6px;
+    font-style: Regular;
+    font-size: 20px;
+    leading-trim: NONE;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #000000;
+    max-width: 1128px;
+}
+
+
 /* Responsive */
 @media (max-width: 1200px) {
     .maintext {
