@@ -100,7 +100,6 @@
 html {
     font-size: 62.5%;
     /* 10px = 1rem */
-    overflow-y: hidden;
 }
 
 body {
@@ -1077,7 +1076,7 @@ linear-gradient(0deg, rgba(46, 96, 145, 0.56), rgba(46, 96, 145, 0.56)),
     }
 
     .hero {
-        padding: 10rem 20px 15rem;
+        padding: 10rem 0 15rem;
     }
 
     .updownfirstdiv {
@@ -1143,7 +1142,7 @@ linear-gradient(0deg, rgba(46, 96, 145, 0.56), rgba(46, 96, 145, 0.56)),
     }
 
     .hero {
-        padding: 8rem 20px 12rem;
+        padding: 8rem 0 12rem;
     }
 
     .updownfirstdiv {
@@ -1232,7 +1231,7 @@ font-size: 22px;
     }
 
     .hero {
-        padding: 12rem 20px 20rem;
+        padding: 12rem 0 20rem;
         min-height: auto;
     }
 
@@ -1414,7 +1413,7 @@ font-size: 22px;
 
     .hero {
         height: auto;
-        padding: 8rem 20px 12rem;
+        padding: 8rem 0 12rem;
         min-height: auto;
     }
 
@@ -1645,7 +1644,7 @@ font-size: 22px;
 
     /* Hero */
     .hero {
-        padding: 6rem 20px 8rem;
+        padding: 6rem 0 8rem;
     }
 
     /* Footer */
