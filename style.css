@@ -624,6 +624,7 @@ nav {
     align-items: center;
     flex-direction: row;
     gap: 39px;
+    justify-content: center;
 }
 
 .uslugediv {
@@ -643,6 +644,8 @@ nav {
     width: 395px;
     max-width: 395px;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .uslugetext {
@@ -705,7 +708,10 @@ nav {
     display: flex;
     align-items: end;
     justify-content: center;
+    align-items: end;
+    justify-content: center;
     height: 100%;
+    flex: 1;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 46.63%, rgba(0, 0, 0, 0.7) 79.81%), url("firstimgthirdsec.jpg") center/cover no-repeat;
     padding-bottom: 40px;
     transition: all 0.3s ease;
@@ -816,6 +822,8 @@ nav {
     flex-direction: row;
     gap: 18px;
     margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .machineeediv {
@@ -1073,10 +1081,8 @@ nav {
         max-width: 100%;
         height: auto;
         min-height: 350px;
-    }
-
-    .updownfirstdiv {
         width: 250px;
+        margin: 0 auto;
     }
 
     .cncglodanje {
@@ -1094,8 +1100,13 @@ nav {
         width: 500px;
     }
 
+    .secsecimg {
+        height: auto;
+        width: 500px;
+    }
+
     .updownfirstdiv {
-        margin: 0px;
+        margin: 0 auto;
     }
 
     .maintext {
@@ -1221,10 +1232,7 @@ nav {
         justify-content: center;
     }
 
-    .Industrijskediv {
-        width: calc(50% - 1rem);
-        min-width: 300px;
-    }
+
 
     .simdooproizvoditext {
         width: 100%;
@@ -1338,8 +1346,20 @@ nav {
     .twobutton,
     .twobutton1 {
         width: 100%;
-        padding: 1.5rem 2rem;
-        font-size: 2rem;
+        max-width: 320px;
+        padding: 12px 24px;
+        font-size: 15px;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border-radius: 50px;
+    }
+
+    .twobutton img {
+        width: 30px;
+        height: auto;
     }
 
     /* Third Section (Services) adjustment */
@@ -1385,6 +1405,10 @@ nav {
         font-size: 35px;
     }
 
+    .hero-btns {
+        gap: 14px;
+    }
+
     .secsec img {
         max-width: 350px;
     }
@@ -1418,9 +1442,31 @@ nav {
         font-size: 1.3rem;
     }
 
+    /* Machine div adjustment */
+    .Industrijskediv {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .industrijsketextbox {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    .machinedivvv {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
     /* General Typography Scaling */
     .maintext {
-        font-size: 3rem;
+        /* Slightly larger main text */
+        font-size: 40px;
+    }
+
+    .maintextheading {
+        font-size: 16px;
     }
 
     .simdooinzen,
@@ -1451,7 +1497,6 @@ nav {
     }
 
     .machineimg {
-        height: auto;
         max-height: 200px;
     }
 
@@ -1459,9 +1504,17 @@ nav {
     .secsec,
     .thirdsec,
     .fourthsec,
-    .fifthsec,
-    .sixthsec {
-        padding: 3rem 1.5rem;
+    .fifthsec {
+        padding: 3rem 20px;
+    }
+
+    .hero {
+        padding: 8rem 20px 12rem;
+    }
+
+    .footerdivvvvvvvvvvv {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     /* Hero */
@@ -1482,7 +1535,7 @@ nav {
 
 @media (max-width: 360px) {
     .maintext {
-        font-size: 28px;
+        font-size: 34px;
     }
 
     .simdooinzen {
@@ -1490,8 +1543,7 @@ nav {
     }
 
     .secsec img {
-        max-width: 200px;
-        margin: 0 auto;
+        max-width: 250px;
         display: block;
     }
 
@@ -1506,11 +1558,10 @@ nav {
         height: auto;
     }
 
-    .updownfirstdiv {
-        height: auto;
-        min-height: auto;
-        width: 100%;
+    .twobutton img {
+        width: 20px;
     }
+
 
     .nasitext,
     .komponentetext,
@@ -1529,12 +1580,21 @@ nav {
         font-size: 14px;
     }
 
-    /* Reduce padding for ultra small screens */
+    /* Reduce padding for ultra small screens but keep 20px side padding */
     .secsec,
     .thirdsec,
     .fourthsec,
     .fifthsec {
-        padding: 3rem 1rem;
+        padding: 3rem 20px;
+    }
+
+    .hero {
+        padding: 6rem 20px 8rem;
+    }
+
+    .footerdivvvvvvvvvvv {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .logo img,
