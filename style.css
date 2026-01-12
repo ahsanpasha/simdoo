@@ -981,7 +981,8 @@ nav {
     /* Apply similar padding to other sections */
     .thirdsec,
     .fourthsec,
-    .fifthsec {
+    .fifthsec,
+    .sixthsec {
         padding: 40px 50px 60px 50px;
         gap: 60px;
     }
@@ -1046,7 +1047,8 @@ nav {
     /* Further reduce padding/gaps */
     .thirdsec,
     .fourthsec,
-    .fifthsec {
+    .fifthsec,
+    .sixthsec {
         padding: 40px 40px 60px 40px;
         gap: 30px;
     }
@@ -1170,6 +1172,10 @@ nav {
     .updownfirstdiv {
         max-width: 395px;
     }
+
+    .sixthsec {
+        padding: 40px 60px 20px 60px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -1252,6 +1258,10 @@ nav {
     .secsec img {
         max-width: 500px;
         height: auto;
+    }
+
+    .sixthsec {
+        padding: 40px 40px 20px 40px;
     }
 }
 
@@ -1513,8 +1523,19 @@ nav {
     }
 
     .footerdivvvvvvvvvvv {
-        padding-left: 20px;
-        padding-right: 20px;
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+        gap: 30px;
+        text-align: center;
+    }
+
+    /* Target the social icons div specifically (it's the last child div) */
+    .footerdivvvvvvvvvvv>div:last-child {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        width: 100%;
     }
 
     /* Hero */
