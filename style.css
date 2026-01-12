@@ -97,12 +97,14 @@ body {
     overflow-x: hidden;
 }
 
-.container {
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 2rem;
+/* Ensure bold tags don't break sizing and inherit fluid sizes */
+b,
+strong {
+    font-weight: 700;
+    font-size: inherit;
 }
+
+
 
 
 
@@ -110,7 +112,8 @@ body {
 .top-bar {
     background-color: var(--navbar-bg);
     color: var(--white);
-    padding: 1.5rem 0;
+    padding: 1.5rem 126px;
+
 }
 
 .top-bar-content {
@@ -169,7 +172,7 @@ body {
 nav {
     background-color: var(--white);
     box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
-    padding: 2rem 0;
+    padding: 2rem 131px;
 }
 
 .nav-content {
@@ -301,7 +304,7 @@ nav {
 .maintext {
     font-family: 'Clash Display', sans-serif;
     font-weight: 500;
-    font-size: 90px;
+    font-size: clamp(3.6rem, 6vw, 9rem);
     line-height: 1.2;
     letter-spacing: 0.02em;
     text-align: center;
@@ -315,7 +318,7 @@ nav {
 .maintextheading {
     font-family: Montserrat;
     font-weight: 500;
-    font-size: 20px;
+    font-size: clamp(1.6rem, 1.6vw, 2.6rem);
     line-height: 1.5;
     text-align: center;
     text-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.5);
@@ -335,7 +338,7 @@ nav {
     border-radius: 6rem;
     font-family: Montserrat;
     font-weight: 500;
-    font-size: 2.4rem;
+    font-size: clamp(1.6rem, 1.2vw + 1rem, 2.4rem);
     line-height: 1;
     text-align: center;
     text-transform: capitalize;
@@ -356,7 +359,7 @@ nav {
     border-radius: 6rem;
     font-family: Montserrat;
     font-weight: 500;
-    font-size: 2.4rem;
+    font-size: clamp(1.6rem, 1.2vw + 1rem, 2.4rem);
     line-height: 1;
     text-align: center;
     text-transform: capitalize;
@@ -646,6 +649,7 @@ nav {
     padding: 10px;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .uslugetext {
@@ -706,25 +710,95 @@ nav {
 .updownfirstdivtextdd {
     border-radius: 10px;
     display: flex;
-    align-items: end;
-    justify-content: center;
-    align-items: end;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
     height: 100%;
     flex: 1;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 46.63%, rgba(0, 0, 0, 0.7) 79.81%), url("firstimgthirdsec.jpg") center/cover no-repeat;
+    position: relative;
+    background: inherit;
     padding-bottom: 40px;
     transition: all 0.3s ease;
+    overflow: hidden;
 }
 
-.updownfirstdiv:hover .updownfirstdivtextdd {
-    background: linear-gradient(0deg, rgba(236, 246, 255, 0.48), rgba(236, 246, 255, 0.48)),
-        linear-gradient(0deg, rgba(236, 246, 255, 0.33), rgba(236, 246, 255, 0.33)),
-        url("firstimgthirdsec.jpg") center/cover no-repeat;
+.updownfirstdivtextdd::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    background-image:
+        linear-gradient(0deg, rgba(236, 246, 255, 0.48), rgba(236, 246, 255, 0.48)),
+        linear-gradient(0deg, rgba(236, 246, 255, 0.33), rgba(236, 246, 255, 0.33));
+}
+.updownfirstdiv:hover .updownfirstdivtextdd::after {
+    opacity: 1;
 }
 
+
+
+
+.updownfirstdiv .cncglodanje {
+    z-index: 2;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 32.86px;
+    letter-spacing: 3%;
+    margin-bottom: 0;
+    margin-top: 0;
+    transition: all 0.3s;
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+}
+.updownfirstdiv .card-desc {
+    display: none;
+}
 .updownfirstdiv:hover .cncglodanje {
     color: #2E6091;
+
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 600;
+    font-style: Semibold;
+    font-size: 32px;
+    line-height: 32.86px;
+    letter-spacing: 3%;
+    text-align: center;
+    border-radius: 8px;
+    padding: 1.2rem 2rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -70%);
+    width: max-content;
+    transition: all 0.3s;
+}
+.updownfirstdiv:hover .card-desc {
+    display: block;
+    position: absolute;
+    left: 50%;
+    width: 80%;
+    bottom: 80px;
+    transform: translate(-50%, 0);
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1%;
+    text-align: center;
+  
+
+    z-index: 2;
 }
 
 .updowndivthree {
@@ -837,10 +911,11 @@ nav {
     align-items: center;
     justify-content: center;
     gap: 28px;
+background: ;
 
     background-image:
-        linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-        linear-gradient(0deg, rgba(46, 96, 145, 0.75), rgba(46, 96, 145, 0.75)),
+       linear-gradient(0deg, rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.39)),
+linear-gradient(0deg, rgba(46, 96, 145, 0.56), rgba(46, 96, 145, 0.56)),
         url("contactbg.jpg");
 
     background-size: cover;
@@ -901,15 +976,15 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 60px;
+    gap: clamp(1.6rem, 3vw, 6rem);
 
 }
 
 .footerlink {
     font-family: Montserrat;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 20px;
+    font-size: clamp(1.6rem, 1.2vw + 1rem, 2rem);
+    line-height: 1.2;
     letter-spacing: 0%;
     text-align: center;
     color: #000000;
@@ -926,10 +1001,10 @@ nav {
 .copyrighttext {
     font-family: Montserrat;
     font-weight: 500;
-    font-size: 18px;
+    font-size: clamp(1.4rem, 1vw + 0.8rem, 1.8rem);
     text-align: center;
-    line-height: 27px;
-    letter-spacing: 4%;
+    line-height: 1.6;
+    letter-spacing: 0.04em;
     color: #000000;
 }
 
@@ -937,22 +1012,15 @@ nav {
     display: flex;
     width: 100%;
     flex-direction: row;
-    padding-left: 63px;
-    padding-right: 63px;
+    padding-inline: clamp(1.6rem, 4vw, 6rem);
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.footerdivvvvvvvvvvv img {
-    width: 24px;
-    height: auto;
-}
 
-.logo img,
-.mobile-logo img {
-    max-width: 140px;
-    height: auto;
-}
+
+
 
 .updown img {
     width: 40px;
@@ -963,6 +1031,12 @@ nav {
     .secsec {
         padding: 40px 50px 60px 50px;
         gap: 80px;
+    }
+    nav {
+        padding: 2rem 40px;
+    }
+    .top-bar{
+        padding: 1.5rem 40px;
     }
 
     .koristimo {
@@ -1091,6 +1165,15 @@ nav {
         font-size: 24px;
     }
 
+    .updownfirstdiv:hover .cncglodanje ,.updownfirstdiv .cncglodanje
+{
+font-size: 22px;
+}
+    .updownfirstdiv:hover .card-desc 
+{
+    font-size: 14px;
+    line-height: 20px;
+}
     .nasitext {
         max-width: unset;
     }
@@ -1106,6 +1189,7 @@ nav {
         height: auto;
         width: 500px;
     }
+
 
     .updownfirstdiv {
         margin: 0 auto;
@@ -1202,7 +1286,12 @@ nav {
     .nav-links {
         gap: 2rem;
     }
-
+   nav {
+        padding: 2rem 20px;
+    }
+    .top-bar{
+        padding: 1.5rem 20px;
+    }
     .nav-links a {
         font-size: 1.8rem;
     }
@@ -1398,7 +1487,6 @@ nav {
         width: 100%;
         max-width: 395px;
         height: auto;
-        min-height: 450px;
     }
 
     /* Fifth Section (Contact) */
@@ -1433,10 +1521,7 @@ nav {
         gap: 1.5rem;
     }
 
-    .logo img,
-    .mobile-logo img {
-        max-width: 120px;
-    }
+    
 
     .nav-links a {
         font-size: 1.6rem;
@@ -1501,6 +1586,11 @@ nav {
         font-size: 16px;
         line-height: 1.5;
     }
+    .logo img,
+.mobile-logo img {
+    max-width: 180px;
+    height: auto;
+}
 
     .secsec img {
         max-width: 280px;
@@ -1533,7 +1623,7 @@ nav {
     /* Target the social icons div specifically (it's the last child div) */
     .footerdivvvvvvvvvvv>div:last-child {
         display: flex;
-        gap: 20px;
+        gap: 12px;
         justify-content: center;
         width: 100%;
     }
@@ -1574,11 +1664,7 @@ nav {
         width: 100%;
     }
 
-    .updown img {
-        width: 20px;
-        height: auto;
-    }
-
+ 
     .twobutton img {
         width: 20px;
     }
@@ -1618,10 +1704,7 @@ nav {
         padding-right: 20px;
     }
 
-    .logo img,
-    .mobile-logo img {
-        max-width: 100px;
-    }
+   
 
     .fifthsec {
         background-position: top center;
