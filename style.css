@@ -621,6 +621,7 @@ nav {
     padding: 100px 117.5px 94px 147.5px;
     background-color: #203F5E;
     display: flex;
+    align-items: center;
     flex-direction: row;
     gap: 39px;
 }
@@ -700,6 +701,7 @@ nav {
 }
 
 .updownfirstdivtextdd {
+    border-radius: 10px;
     display: flex;
     align-items: end;
     justify-content: center;
@@ -955,9 +957,35 @@ nav {
         gap: 80px;
     }
 
+    .koristimo {
+        max-width: unset;
+    }
+
+    .uslugediv {
+        gap: 16px;
+    }
+
     .secsecimg {
         height: auto;
         width: 750px;
+    }
+
+    /* Apply similar padding to other sections */
+    .thirdsec,
+    .fourthsec,
+    .fifthsec {
+        padding: 40px 50px 60px 50px;
+        gap: 60px;
+    }
+
+    .hero {
+        padding: 10rem 0 15rem;
+    }
+
+    .updownfirstdiv {
+        width: 350px;
+        height: 400px;
+        max-width: 100%;
     }
 }
 
@@ -1002,6 +1030,27 @@ nav {
         height: auto;
         width: 600px;
     }
+
+    .maintext {
+        font-size: 80px;
+    }
+
+    /* Further reduce padding/gaps */
+    .thirdsec,
+    .fourthsec,
+    .fifthsec {
+        padding: 40px 40px 60px 40px;
+        gap: 30px;
+    }
+
+    .hero {
+        padding: 8rem 0 12rem;
+    }
+
+    .updownfirstdiv {
+        width: 320px;
+        height: 380px;
+    }
 }
 
 /* Responsive */
@@ -1013,14 +1062,29 @@ nav {
 
     .updowndivthree {
         gap: 20px;
+    }
+
+    .updowndivthree {
+        gap: 20px;
         justify-content: center;
     }
 
     .updownfirstdiv {
-        width: 32%;
         max-width: 100%;
         height: auto;
-        min-height: 450px;
+        min-height: 350px;
+    }
+
+    .updownfirstdiv {
+        width: 250px;
+    }
+
+    .cncglodanje {
+        font-size: 24px;
+    }
+
+    .nasitext {
+        max-width: unset;
     }
 }
 
@@ -1028,6 +1092,19 @@ nav {
     .secsecimg {
         height: auto;
         width: 500px;
+    }
+
+    .updownfirstdiv {
+        margin: 0px;
+    }
+
+    .maintext {
+        font-size: 65px;
+    }
+
+    .updownfirstdiv {
+        /* Ensure cards don't overflow layout before tablet break */
+        max-width: 100%;
     }
 
 }
@@ -1080,7 +1157,6 @@ nav {
     }
 
     .updownfirstdiv {
-        width: 45%;
         max-width: 395px;
     }
 }
@@ -1126,7 +1202,6 @@ nav {
     }
 
     .secsec img {
-        width: 100%;
         max-width: 500px;
         height: auto;
     }
@@ -1167,7 +1242,7 @@ nav {
     }
 
     .secsec img {
-        max-width: 400px;
+        max-width: 500px;
         height: auto;
     }
 }
