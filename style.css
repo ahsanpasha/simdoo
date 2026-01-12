@@ -1416,7 +1416,7 @@ font-size: 22px;
 
     .hero {
         height: auto;
-        padding: 8rem 0 12rem;
+        padding: 8rem 20px 12rem;
         min-height: auto;
     }
 
@@ -1647,7 +1647,7 @@ font-size: 22px;
 
     /* Hero */
     .hero {
-        padding: 6rem 0 8rem;
+        padding: 6rem 20px 8rem;
     }
 
     /* Footer */
