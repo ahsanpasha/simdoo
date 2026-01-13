@@ -64,7 +64,7 @@
                     <li><a href="#">Proizvodi</a></li>
                     <li><a href="kontakt.html" class="active">Kontakt</a></li>
                 </ul>
-                <button class="contactus">Contact Us
+                <button class="contactus" onclick="window.location.href='kontakt.html'">Contact Us
                     <img src="arrow.svg" alt="Arrow" />
                 </button>
                 <button id="menu-toggle" class="menu-toggle">
@@ -87,7 +87,7 @@
                 <li><a href="#">Proizvodi</a></li>
                 <li><a href="kontakt.html" class="active">Kontakt</a></li>
             </ul>
-            <button class="drawer-contactus">Contact Us
+            <button class="drawer-contactus" onclick="window.location.href='kontakt.html'">Contact Us
                 <img src="arrow.svg" alt="Arrow" />
             </button>
             <div class="drawer-contact-info">
@@ -139,7 +139,7 @@
                         <div class="contact-details-list">
                             <div class="contact-item">
                                 <div class="icon-box">
-                                    <img src="email.svg" alt="Email">
+                                    <i class="fa-solid fa-envelope"></i>
                                 </div>
                                 <div class="info-content">
                                     <h3>Email</h3>
@@ -149,11 +149,7 @@
 
                             <div class="contact-item">
                                 <div class="icon-box">
-                                    <!-- Reusing email svg if phone svg not explicitly distinct or reused generic icon -->
-                                    <!-- Or better, use Font Awesome if existing svgs are not general enough, but plan said reuse existing. -->
-                                    <!-- Let's check available SVGs. We have email.svg. We have phone in topbar using email.svg also? Wait, topbar uses email.svg for all icon-like things in my memory or similar. Let's check index.html again. -->
-                                    <!-- Ah, line 34 in index.html uses email.svg for phone too? No, let's assume specific icons or reuse. -->
-                                    <img src="email.svg" alt="Phone">
+                                    <i class="fa-solid fa-phone"></i>
                                 </div>
                                 <div class="info-content">
                                     <h3>Telefon</h3>
@@ -163,7 +159,7 @@
 
                             <div class="contact-item">
                                 <div class="icon-box">
-                                    <img src="pin.svg" alt="Location">
+                                    <i class="fa-solid fa-location-dot"></i>
                                 </div>
                                 <div class="info-content">
                                     <h3>Adresa</h3>

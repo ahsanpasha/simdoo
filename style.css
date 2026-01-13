@@ -250,6 +250,12 @@ nav {
     transition: var(--transition);
 }
 
+.contactus:hover {
+    transform: scale(1.05);
+    background-color: #20456b;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
 .menu-toggle {
     display: none;
     background: transparent;
@@ -1997,6 +2003,11 @@ nav {
     /* Approximation of #2E6091 */
 }
 
+.contact-item .icon-box i {
+    font-size: 24px;
+    color: var(--primary-color);
+}
+
 .info-content h3 {
     font-family: 'Clash Display', sans-serif;
     font-weight: 500;
@@ -2047,7 +2058,7 @@ nav {
 .contact-form textarea {
     border-radius: 20px;
     /* Less rounded for textarea */
-    resize: vertical;
+    resize: none;
 }
 
 .contact-form input:focus,
