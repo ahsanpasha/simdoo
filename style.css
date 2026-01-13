@@ -13,6 +13,7 @@
 [data-aos][data-aos][data-aos-delay] {
     transition-delay: var(--aos-delay, 0ms) !important;
 }
+
 /* Montserrat Font */
 @font-face {
     font-family: 'Montserrat';
@@ -100,7 +101,7 @@
 html {
     font-size: 62.5%;
     /* 10px = 1rem */
-        overflow-x: hidden;
+    overflow-x: hidden;
 
 }
 
@@ -752,6 +753,7 @@ nav {
         linear-gradient(0deg, rgba(236, 246, 255, 0.48), rgba(236, 246, 255, 0.48)),
         linear-gradient(0deg, rgba(236, 246, 255, 0.33), rgba(236, 246, 255, 0.33));
 }
+
 .updownfirstdiv:hover .updownfirstdivtextdd::after {
     opacity: 1;
 }
@@ -777,9 +779,11 @@ nav {
     border-radius: 0;
     padding: 0;
 }
+
 .updownfirstdiv .card-desc {
     display: none;
 }
+
 .updownfirstdiv:hover .cncglodanje {
     color: #2E6091;
 
@@ -799,6 +803,7 @@ nav {
     width: max-content;
     transition: all 0.3s;
 }
+
 .updownfirstdiv:hover .card-desc {
     display: block;
     position: absolute;
@@ -814,7 +819,7 @@ nav {
     line-height: 30px;
     letter-spacing: 1%;
     text-align: center;
-  
+
 
     z-index: 2;
 }
@@ -931,8 +936,8 @@ nav {
     gap: 28px;
 
     background-image:
-       linear-gradient(0deg, rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.49)),
-linear-gradient(0deg, rgba(46, 96, 145, 0.56), rgba(46, 96, 145, 0.56)),
+        linear-gradient(0deg, rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.49)),
+        linear-gradient(0deg, rgba(46, 96, 145, 0.56), rgba(46, 96, 145, 0.56)),
         url("contactbg.jpg");
 
     background-size: cover;
@@ -1049,10 +1054,12 @@ linear-gradient(0deg, rgba(46, 96, 145, 0.56), rgba(46, 96, 145, 0.56)),
         padding: 40px 50px 60px 50px;
         gap: 80px;
     }
+
     nav {
         padding: 2rem 40px;
     }
-    .top-bar{
+
+    .top-bar {
         padding: 1.5rem 40px;
     }
 
@@ -1154,6 +1161,62 @@ linear-gradient(0deg, rgba(46, 96, 145, 0.56), rgba(46, 96, 145, 0.56)),
     }
 }
 
+/* About Page Styles */
+.about-hero {
+    padding: 17rem 0 10rem;
+    background-color: var(--white);
+    min-height: auto;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+    padding: 0 5%;
+}
+
+.about-image-wrapper {
+    flex: 1;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+.about-text-wrapper {
+    flex: 1;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about-text-wrapper h1 {
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 600;
+    font-size: 4.8rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.about-text-wrapper p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    color: #555;
+    line-height: 1.8;
+}
+
 /* Responsive */
 @media (max-width: 1440px) {
     .thirdsec {
@@ -1182,15 +1245,16 @@ linear-gradient(0deg, rgba(46, 96, 145, 0.56), rgba(46, 96, 145, 0.56)),
         font-size: 24px;
     }
 
-    .updownfirstdiv:hover .cncglodanje ,.updownfirstdiv .cncglodanje
-{
-font-size: 22px;
-}
-    .updownfirstdiv:hover .card-desc 
-{
-    font-size: 14px;
-    line-height: 20px;
-}
+    .updownfirstdiv:hover .cncglodanje,
+    .updownfirstdiv .cncglodanje {
+        font-size: 22px;
+    }
+
+    .updownfirstdiv:hover .card-desc {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
     .nasitext {
         max-width: unset;
     }
@@ -1303,12 +1367,15 @@ font-size: 22px;
     .nav-links {
         gap: 2rem;
     }
-   nav {
+
+    nav {
         padding: 2rem 20px;
     }
-    .top-bar{
+
+    .top-bar {
         padding: 1.5rem 20px;
     }
+
     .nav-links a {
         font-size: 1.8rem;
     }
@@ -1538,7 +1605,7 @@ font-size: 22px;
         gap: 1.5rem;
     }
 
-    
+
 
     .nav-links a {
         font-size: 1.6rem;
@@ -1603,11 +1670,12 @@ font-size: 22px;
         font-size: 16px;
         line-height: 1.5;
     }
+
     .logo img,
-.mobile-logo img {
-    max-width: 180px;
-    height: auto;
-}
+    .mobile-logo img {
+        max-width: 180px;
+        height: auto;
+    }
 
     .secsec img {
         max-width: 280px;
@@ -1681,7 +1749,7 @@ font-size: 22px;
         width: 100%;
     }
 
- 
+
     .twobutton img {
         width: 20px;
     }
@@ -1721,7 +1789,7 @@ font-size: 22px;
         padding-right: 20px;
     }
 
-   
+
 
     .fifthsec {
         background-position: top center;
@@ -1731,5 +1799,374 @@ font-size: 22px;
 @media (min-width: 1920px) {
     .maintext {
         font-size: 9rem !important;
+    }
+}
+
+/* About Page Responsive */
+@media (max-width: 992px) {
+    .about-content {
+        flex-direction: column;
+        gap: 4rem;
+        text-align: center;
+    }
+
+    .about-text-wrapper {
+        align-items: center;
+    }
+
+    .about-text-wrapper h1 {
+        font-size: 3.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-hero {
+        padding: 12rem 0 6rem;
+    }
+
+    .about-text-wrapper h1 {
+        font-size: 3rem;
+    }
+
+    .about-text-wrapper p {
+        font-size: 1.6rem;
+    }
+
+    .about-content {
+        padding: 0 20px;
+        gap: 3rem;
+    }
+}
+
+/* Services Page Styles */
+
+/* Services Hero Section */
+.services-hero {
+    min-height: 40rem;
+    padding: 12rem 0;
+    background: url('main.webp') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    justify-content: center;
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.services-hero .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(46, 96, 145, 0.7);
+    /* Darker overlay for readability */
+    z-index: 1;
+}
+
+.services-hero .container {
+    z-index: 2;
+    position: relative;
+    text-align: center;
+}
+
+/* Services Grid Layout */
+.services-section {
+    padding: 0 0 10rem;
+}
+
+.services-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    justify-content: center;
+}
+
+/* Service Card Adjustments */
+.services-grid .service-card {
+    width: 100%;
+    max-width: 100%;
+    /* Override fixed width */
+    margin: 0;
+    height: 45rem;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services-grid .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+
+.services-grid .updownfirstdivtextdd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Center content vertically for the hover state target */
+    align-items: center;
+    /* Center content horizontally */
+    gap: 15px;
+    /* Gap between heading and description */
+    padding: 2rem;
+    height: 100%;
+}
+
+.services-grid .cncglodanje {
+    font-size: 1.5rem;
+    width: 100%;
+    margin-bottom: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    transition: all 0.5s ease;
+    text-align: center;
+    transform: translateY(180px);
+    /* Push title to bottom initially */
+}
+
+.services-grid .card-desc {
+    display: block !important;
+    width: 100%;
+    color: #f0f0f0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    text-align: center;
+    opacity: 0.9;
+    margin-top: 0;
+
+    /* Animation settings */
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.services-grid .service-card:hover .cncglodanje {
+    transform: translateY(0);
+    /* Move back to center on hover */
+    font-weight: 700;
+}
+
+.services-grid .service-card:hover .card-desc {
+    max-height: 150px;
+    opacity: 1;
+}
+
+
+/* Responsive Design for Services Grid */
+
+/* Tablet Landscape / Small Desktop */
+@media (max-width: 1200px) {
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
+
+/* Tablet Portrait */
+@media (max-width: 900px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-hero .maintext {
+        font-size: 5rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        /* Limit width of single column */
+        margin: 0 auto;
+    }
+
+    .services-hero {
+        min-height: 30rem;
+        padding: 8rem 0;
+    }
+
+    .services-hero .maintext {
+        font-size: 3.5rem;
+    }
+
+    .services-hero .maintextheading {
+        font-size: 1.6rem;
+    }
+}
+
+/* Contact Page Styles */
+
+.contact-section {
+    padding: 10rem 0;
+    background-color: var(--white);
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 6rem;
+    align-items: start;
+}
+
+.section-title {
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 600;
+    font-size: 3.6rem;
+    margin-bottom: 2rem;
+    color: var(--heading-color);
+}
+
+.section-desc {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    color: #666;
+    margin-bottom: 4rem;
+    line-height: 1.6;
+}
+
+.contact-details-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.contact-item .icon-box {
+    width: 60px;
+    height: 60px;
+    background-color: #f0f7ff;
+    border-radius: 50%;
+    /* Circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.contact-item .icon-box img {
+    /* Ensure icon color matches design if they are SVGs, otherwise keep as is or filter */
+    width: 24px;
+    height: 24px;
+    /* Optional: apply filter to colorize existing icons to primary blue if they aren't already */
+    filter: invert(34%) sepia(16%) saturate(3025%) hue-rotate(179deg) brightness(96%) contrast(92%);
+    /* Approximation of #2E6091 */
+}
+
+.info-content h3 {
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--heading-color);
+}
+
+.info-content a,
+.info-content p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    color: #555;
+    text-decoration: none;
+    line-height: 1.5;
+    transition: color 0.3s ease;
+}
+
+.info-content a:hover {
+    color: var(--primary-color);
+}
+
+/* Contact Form */
+.contact-form {
+    background: #fff;
+    padding: 4rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1.8rem 2.5rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 50px;
+    /* Rounded inputs */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+.contact-form textarea {
+    border-radius: 20px;
+    /* Less rounded for textarea */
+    resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgba(46, 96, 145, 0.1);
+}
+
+.submit-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 1.8rem 4rem;
+    border-radius: 50px;
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #244d75;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(46, 96, 145, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .contact-form {
+        padding: 2.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .section-title {
+        font-size: 2.8rem;
     }
 }

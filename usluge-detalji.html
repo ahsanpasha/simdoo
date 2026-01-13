@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usluge Detalji - SIM d.o.o.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+</head>
+
+<body>
+    <header data-aos="fade-down">
+        <div class="top-bar">
+            <div class="container top-bar-content">
+                <div class="logo">
+                    <a href="index.html"><img src="logo.svg" alt="SIM d.o.o. Logo"></a>
+                </div>
+                <div class="mainspace">
+                    <div class="email-info">
+                        <img src="email.svg" alt="Email Icon">
+                        <div class="emailll">
+                            <span class="email-label">Email:</span>
+                            <a href="mailto:info@sim.hr" class="email-value">info@sim.hr</a>
+                        </div>
+                    </div>
+                    <img src="line.svg" alt="Line">
+                    <div class="email-info">
+                        <img src="email.svg" alt="Email Icon">
+                        <div class="emailll">
+                            <span class="email-label">Telefon:</span>
+                            <a href="mailto:info@sim.hr" class="email-value">+385 (0)XX XXX XXXX</a>
+                        </div>
+                    </div>
+                    <img src="line.svg" alt="Line">
+                    <div class="email-info">
+                        <img src="email.svg" alt="Email Icon">
+                        <div class="emailll">
+                            <span class="email-label">Adresa:</span>
+                            <a href="mailto:info@sim.hr" class="email-value">Ulica 108. brigade ZNG 74, 35000</br>
+                                Slavonski
+                                Brod, Hrvatska</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container nav-content">
+
+
+                <div class="logo mobile-logo">
+                    <a href="index.html"><img src="logo.svg" alt="SIM d.o.o. Logo"></a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Naslovna</a></li>
+                    <li><a href="o-nama.html">O Nama</a></li>
+                    <li><a href="usluge.html" class="active">Usluge</a></li>
+                    <li><a href="#">Proizvodi</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+                <button class="contactus">Contact Us
+                    <img src="arrow.svg" alt="Arrow" />
+                </button>
+                <button id="menu-toggle" class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="drawer-overlay" id="drawer-overlay"></div>
+    <div class="side-drawer" id="side-drawer">
+        <div class="drawer-header">
+            <button class="close-drawer" id="close-drawer">&times;</button>
+        </div>
+        <div class="drawer-content">
+            <ul class="drawer-links">
+                <li><a href="index.html">Naslovna</a></li>
+                <li><a href="o-nama.html">O Nama</a></li>
+                <li><a href="usluge.html" class="active">Usluge</a></li>
+                <li><a href="#">Proizvodi</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+            <button class="drawer-contactus">Contact Us
+                <img src="arrow.svg" alt="Arrow" />
+            </button>
+            <div class="drawer-contact-info">
+                <div class="email-info">
+                    <img src="email.svg" alt="Email Icon">
+                    <div class="emailll">
+                        <span class="email-label">Email:</span>
+                        <a href="mailto:info@sim.hr" class="email-value">info@sim.hr</a>
+                    </div>
+                </div>
+                <div class="email-info">
+                    <img src="email.svg" alt="Email Icon">
+                    <div class="emailll">
+                        <span class="email-label">Telefon:</span>
+                        <a href="mailto:info@sim.hr" class="email-value">+385 (0)XX XXX XXXX</a>
+                    </div>
+                </div>
+                <div class="email-info">
+                    <img src="email.svg" alt="Email Icon">
+                    <div class="emailll">
+                        <span class="email-label">Adresa:</span>
+                        <a href="mailto:info@sim.hr" class="email-value">Ulica 108. brigade ZNG 74, 35000 Slavonski
+                            Brod, Hrvatska</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <main>
+        <section class="about-hero" data-aos="fade-up">
+            <div class="container about-content">
+                <div class="about-image-wrapper">
+                    <!-- Dynamic Image -->
+                    <img id="service-image" src="" alt="Service Image" class="about-image">
+                </div>
+                <div class="about-text-wrapper">
+                    <!-- Dynamic Title -->
+                    <h1 id="service-title">Učitavanje...</h1>
+                    <div id="service-description">
+                        <!-- Dynamic Description -->
+                        <p>Molimo pričekajte, učitavamo detalje usluge.</p>
+                    </div>
+                    <a href="usluge.html" class="btn btn-primary"
+                        style="margin-top: 2rem; display: inline-block; background-color: var(--primary-color); color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none;">Natrag
+                        na usluge</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="sixthsec" data-aos="fade-up">
+            <div class="footerdivvvvvvvvvvv">
+                <img src="fotterlogo.svg" alt="">
+                <div class="footerlinks">
+                    <p class="footerlink"><a href="index.html"
+                            style="color: inherit; text-decoration: none;">Naslovna</a></p>
+                    <p class="footerlink"><a href="o-nama.html" style="color: inherit; text-decoration: none;">O
+                            Nama</a></p>
+                    <p class="footerlink"><a href="usluge.html"
+                            style="color: inherit; text-decoration: none;">Usluge</a></p>
+                    <p class="footerlink"><a href="#" style="color: inherit; text-decoration: none;">Proizvodi</a></p>
+                    <p class="footerlink"><a href="kontakt.html"
+                            style="color: inherit; text-decoration: none;">Kontakt</a></p>
+                </div>
+                <div>
+                    <img src="fb.svg" alt="">
+                    <img src="yt.svg" alt="">
+                    <img src="pin.svg" alt="">
+                    <img src="insta.svg" alt="">
+                </div>
+            </div>
+            <hr class="mainbr" />
+            <p class="copyrighttext">© 2025 SIM d.o.o.. All rights reserved.</p>
+
+        </div>
+    </main>
+
+    <!-- AOS Animation JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="aos-init.js"></script>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const sideDrawer = document.getElementById('side-drawer');
+        const closeDrawer = document.getElementById('close-drawer');
+        const drawerOverlay = document.getElementById('drawer-overlay');
+
+        function toggleDrawer() {
+            sideDrawer.classList.toggle('active');
+            drawerOverlay.classList.toggle('active');
+            document.body.classList.toggle('drawer-open');
+            document.body.style.overflow = sideDrawer.classList.contains('active') ? 'hidden' : '';
+        }
+
+        menuToggle.addEventListener('click', toggleDrawer);
+        closeDrawer.addEventListener('click', toggleDrawer);
+        drawerOverlay.addEventListener('click', toggleDrawer);
+
+        // Close drawer when clicking a link
+        const drawerLinks = document.querySelectorAll('.drawer-links a');
+        drawerLinks.forEach(link => {
+            link.addEventListener('click', toggleDrawer);
+        });
+
+        // Dynamic Content Logic
+        const servicesData = {
+            1: {
+                title: "CNC Glodanje",
+                image: "firstimgthirdsec.jpg",
+                description: `
+                    <p>Naše usluge CNC glodanja nude vrhunsku preciznost i fleksibilnost za izradu najzahtjevnijih metalnih dijelova. Koristimo napredne horizontalne i vertikalne obradne centre koji nam omogućuju obradu širokog spektra materijala, uključujući čelik, aluminij, mesing i plastiku.</p>
+                    <p>Bez obzira trebate li pojedinačne prototipove ili velikoserijsku proizvodnju, naš stručni tim i moderna tehnologija jamče točnost i kvalitetu u svakom detalju. Specijalizirani smo za složene geometrije i visoke tolerancije.</p>
+                    <p>Kontaktirajte nas danas kako bismo razmotrili vaše potrebe i ponudili optimalno rješenje za vaš projekt.</p>
+                `
+            },
+            2: {
+                title: "CNC Tokarenje",
+                image: "sec.jpg",
+                description: `
+                    <p>Nudimo visokokvalitetne usluge CNC tokarenja za proizvodnju preciznih rotacijskih dijelova. Naša oprema visoke tehnologije omogućuje nam postizanje iznimne točnosti i izvrsne površinske obrade.</p>
+                    <p>Od jednostavnih osovina do složenih komponenti s navojima i utorima, naši iskusni operateri osiguravaju dosljednost i pouzdanost. Efikasnost našeg procesa omogućuje brzu isporuku i konkurentne cijene.</p>
+                    <p>Naše mogućnosti uključuju tokarenje različitih promjera i duljina, prilagođeno vašim specifičnim inženjerskim zahtjevima.</p>
+                `
+            },
+            3: {
+                title: "Bušenje i Povrtanje",
+                image: "third.jpg",
+                description: `
+                    <p>Precizno bušenje i povrtanje ključni su za funkcionalnost mnogih mehaničkih sklopova. Naša usluga osigurava savršenu geometriju provrta, točnu poziciju i traženu kvalitetu površine.</p>
+                    <p>Koristimo specijalizirane alate i tehnike za obradu dubokih rupa, mikrobupšenje i završno povrtanje za postizanje tijesnih tolerancija. Ovi procesi su često integrirani u naše kompleksnije operacije obrade.</p>
+                    <p>Jamčimo pouzdanost spojeva i montaže zahvaljujući našoj posvećenosti detaljima u svakoj fazi obrade.</p>
+                `
+            },
+            4: {
+                title: "Industrijski Strojevi",
+                image: "machine1.jpg",
+                description: `
+                    <p>Proizvodnja dijelova za industrijske strojeve zahtijeva robusnost i dugotrajnost. SIM d.o.o. je vaš partner za izradu ključnih komponenti koje pokreću vašu proizvodnju.</p>
+                    <p>Izrađujemo dijelove za različite sektore, uključujući automatizaciju, pakiranje, energetiku i tešku industriju. Razumijemo važnost pouzdanosti opreme i zato koristimo samo certificirane materijale i provjerene postupke.</p>
+                    <p>Naša inženjerska podrška može vam pomoći u optimizaciji dizajna dijelova radi bolje funkcionalnosti i smanjenja troškova proizvodnje.</p>
+                `
+            },
+            5: {
+                title: "Precizna Obrada",
+                image: "machine2.jpg",
+                description: `
+                    <p>Precizna obrada je srž našeg poslovanja. S mikronskom točnošću izrađujemo komponente koje zahtijevaju najviše standarde kvalitete. Naša kontrola kvalitete prati svaki korak procesa.</p>
+                    <p>Ova usluga je idealna za sektore poput medicine, optike, zrakoplovstva i fine mehanike gdje nema mjesta za pogreške. Ulažemo u najnoviju mjernu opremu kako bismo potvrdili sukladnost svakog isporučenog dijela.</p>
+                    <p>Povjerite nam svoje najosjetljivije projekte i uvjerite se u našu sposobnost isporuke izvrsnosti.</p>
+                `
+            },
+            6: {
+                title: "Izrada Prototipova",
+                image: "machine3.png",
+                description: `
+                    <p>Brza i efikasna izrada prototipova omogućuje vam da svoje ideje pretvorite u stvarnost u rekordnom roku. Pomažemo vam validirati dizajn, testirati funkcionalnost i pripremiti se za serijsku proizvodnju.</p>
+                    <p>Nudimo fleksibilnost u izboru materijala i brzu reakciju na izmjene dizajna. Naš cilj je skratiti vaše vrijeme izlaska na tržište pružajući vam funkcionalne uzorke visoke kvalitete.</p>
+                    <p>Surađujemo s vašim razvojnim timom kako bismo osigurali da prototip u potpunosti odgovara vašim vizijama i tehničkim zahtjevima.</p>
+                `
+            },
+            7: {
+                title: "Rezervni Dijelovi",
+                image: "machine4.png",
+                description: `
+                    <p>Zastoj stroja zbog kvara može biti skup. Naša usluga izrade rezervnih dijelova osigurava brzu zamjenu istrošenih ili slomljenih komponenti, često s poboljšanim karakteristikama u odnosu na original.</p>
+                    <p>Možemo replicirati dijelove na temelju uzorka ili tehničke dokumentacije, čak i za strojeve za koje originalni dijelovi više nisu dobavljivi. Koristimo kvalitetne materijale za produženi vijek trajanja.</p>
+                    <p>Održite svoj pogon u funkciji uz našu pouzdanu podršku za rezervne dijelove.</p>
+                `
+            },
+            8: {
+                title: "Montaža Sklopova",
+                image: "machine5.png",
+                description: `
+                    <p>Osim izrade pojedinačnih dijelova, nudimo i uslugu montaže mehaničkih sklopova. Ovo vam štedi vrijeme i resurse, jer dobivate gotov proizvod spreman za ugradnju ili daljnju upotrebu.</p>
+                    <p>Naši tehničari pažljivo sastavljaju komponente, provode funkcionalna testiranja i osiguravaju da sve radi besprijekorno. Nudimo kompletna rješenja "ključ u ruke" za vaše potrebe.</p>
+                    <p>Od jednostavnih podsklopova do kompleksnih mehanizama, SIM d.o.o. je vaš pouzdan partner za montažu.</p>
+                `
+            }
+        };
+
+        // Get ID from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const serviceId = urlParams.get('id');
+
+        // Populate Content
+        if (serviceId && servicesData[serviceId]) {
+            const service = servicesData[serviceId];
+            document.getElementById('service-title').textContent = service.title;
+            document.getElementById('service-image').src = service.image;
+            document.getElementById('service-description').innerHTML = service.description;
+            document.title = `${service.title} - SIM d.o.o.`;
+        } else {
+            // Default or Error state
+            document.getElementById('service-title').textContent = "Usluga nije pronađena";
+            document.getElementById('service-description').innerHTML = "<p>Tražena usluga ne postoji ili je došlo do greške.</p>";
+        }
+    </script>
+</body>
+
+</html>
