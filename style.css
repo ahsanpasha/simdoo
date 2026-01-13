@@ -695,6 +695,64 @@ nav {
     overflow: hidden;
 }
 
+.updownfirstdiv {
+    width: 33%;
+    height: 300px;
+}
+
+.updownfirstdivtextdd {
+    border-radius: 10px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 40px;
+    transition: all 0.35s ease;
+}
+
+.updownfirstdivtextdd::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.88);
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    z-index: 1;
+}
+
+.cncglodanje,
+.card-desc {
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+}
+
+.card-desc {
+    display: none;
+}
+
+.updownfirstdivtextdd:hover::before {
+    opacity: 1;
+}
+
+.updownfirstdivtextdd:hover {
+    justify-content: center;
+    padding-bottom: 0;
+}
+
+.updownfirstdivtextdd:hover .cncglodanje {
+    font-family: "Clash Display";
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 32.86px;
+    letter-spacing: 3%;
+    color: #2E6091;
+    margin-bottom: 5px;
+}
+
 .uslugetext {
     font-family: Montserrat;
     font-weight: 600;
@@ -704,6 +762,16 @@ nav {
     vertical-align: middle;
     text-transform: uppercase;
     color: #FFFFFF;
+}
+
+.updownfirstdivtextdd:hover .card-desc {
+    display: block;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1%;
+    color: #000000;
 }
 
 .nasitext {
