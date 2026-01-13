@@ -372,6 +372,12 @@ nav {
     transition: var(--transition);
 }
 
+.twobutton:hover {
+    transform: scale(1.05);
+    background-color: #f0f7ff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
 .twobutton1 {
     border: 0.3rem solid rgba(255, 255, 255, 0.35);
     background-color: rgba(255, 255, 255, 0.07);
@@ -391,6 +397,12 @@ nav {
     color: #FFFFFF;
     cursor: pointer;
     transition: var(--transition);
+}
+
+.twobutton1:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: #ffffff;
 }
 
 .hero-content {
@@ -643,6 +655,12 @@ nav {
     vertical-align: middle;
     text-transform: capitalize;
     color: #FFFFFF;
+    transition: var(--transition);
+}
+
+.Saznajtebtn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .thirdsec {
