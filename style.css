@@ -754,13 +754,6 @@ nav {
         linear-gradient(0deg, rgba(236, 246, 255, 0.33), rgba(236, 246, 255, 0.33));
 }
 
-.updownfirstdiv:hover .updownfirstdivtextdd::after {
-    opacity: 1;
-}
-
-
-
-
 .updownfirstdiv .cncglodanje {
     z-index: 2;
     position: relative;
@@ -773,7 +766,6 @@ nav {
     letter-spacing: 3%;
     margin-bottom: 0;
     margin-top: 0;
-    transition: all 0.3s;
     background: none;
     box-shadow: none;
     border-radius: 0;
@@ -784,45 +776,7 @@ nav {
     display: none;
 }
 
-.updownfirstdiv:hover .cncglodanje {
-    color: #2E6091;
 
-    font-family: 'Clash Display', sans-serif;
-    font-weight: 600;
-    font-style: Semibold;
-    font-size: 32px;
-    line-height: 32.86px;
-    letter-spacing: 3%;
-    text-align: center;
-    border-radius: 8px;
-    padding: 1.2rem 2rem;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -70%);
-    width: max-content;
-    transition: all 0.3s;
-}
-
-.updownfirstdiv:hover .card-desc {
-    display: block;
-    position: absolute;
-    left: 50%;
-    width: 80%;
-    bottom: 80px;
-    transform: translate(-50%, 0);
-    color: #000000;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-style: Medium;
-    font-size: 20px;
-    line-height: 30px;
-    letter-spacing: 1%;
-    text-align: center;
-
-
-    z-index: 2;
-}
 
 .updowndivthree {
     display: flex;
@@ -1245,15 +1199,7 @@ nav {
         font-size: 24px;
     }
 
-    .updownfirstdiv:hover .cncglodanje,
-    .updownfirstdiv .cncglodanje {
-        font-size: 22px;
-    }
 
-    .updownfirstdiv:hover .card-desc {
-        font-size: 14px;
-        line-height: 20px;
-    }
 
     .nasitext {
         max-width: unset;
@@ -1907,8 +1853,8 @@ nav {
 .services-grid .updownfirstdivtextdd {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    /* Center content vertically for the hover state target */
+    justify-content: flex-end;
+    /* Align content to bottom */
     align-items: center;
     /* Center content horizontally */
     gap: 15px;
@@ -1922,39 +1868,20 @@ nav {
     width: 100%;
     margin-bottom: 0;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
-    transition: all 0.5s ease;
     text-align: center;
-    transform: translateY(180px);
-    /* Push title to bottom initially */
 }
 
 .services-grid .card-desc {
-    display: block !important;
-    width: 100%;
-    color: #f0f0f0;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.1rem;
-    text-align: center;
-    opacity: 0.9;
-    margin-top: 0;
-
-    /* Animation settings */
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: all 0.5s ease;
+    display: none !important;
 }
 
 .services-grid .service-card:hover .cncglodanje {
-    transform: translateY(0);
-    /* Move back to center on hover */
+    /* No movement on hover */
+    transform: none;
     font-weight: 700;
 }
 
-.services-grid .service-card:hover .card-desc {
-    max-height: 150px;
-    opacity: 1;
-}
+/* Removed card-desc hover effect */
 
 
 /* Responsive Design for Services Grid */
