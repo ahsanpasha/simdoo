@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SIM d.o.o. - Precizna CNC Proizvodnja</title>
+    <title>Proizvodi - SIM d.o.o.</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -18,7 +18,7 @@
         <div class="top-bar">
             <div class="container top-bar-content">
                 <div class="logo">
-                    <img src="images/logo.svg" alt="SIM d.o.o. Logo">
+                    <a href="index.html"><img src="images/logo.svg" alt="SIM d.o.o. Logo"></a>
                 </div>
                 <div class="mainspace">
                     <div class="email-info">
@@ -54,13 +54,13 @@
 
 
                 <div class="logo mobile-logo">
-                    <img src="images/logo.svg" alt="SIM d.o.o. Logo">
+                    <a href="index.html"><img src="images/logo.svg" alt="SIM d.o.o. Logo"></a>
                 </div>
                 <ul class="nav-links">
                     <li><a href="index.html">Naslovna</a></li>
                     <li><a href="o-nama.html">O Nama</a></li>
                     <li><a href="usluge.html">Usluge</a></li>
-                    <li><a href="proizvodi.html">Proizvodi</a></li>
+                    <li><a href="proizvodi.html" class="active">Proizvodi</a></li>
                     <li><a href="kontakt.html">Kontakt</a></li>
                 </ul>
                 <button class="contactus" onclick="window.location.href='kontakt.html'">Contact Us
@@ -80,11 +80,11 @@
         </div>
         <div class="drawer-content">
             <ul class="drawer-links">
-                <li><a href="#">Naslovna</a></li>
+                <li><a href="index.html">Naslovna</a></li>
                 <li><a href="o-nama.html">O Nama</a></li>
-                <li><a href="#">Usluge</a></li>
-                <li><a href="proizvodi.html">Proizvodi</a></li>
-                <li><a href="#">Kontakt</a></li>
+                <li><a href="usluge.html">Usluge</a></li>
+                <li><a href="proizvodi.html" class="active">Proizvodi</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
             <button class="drawer-contactus" onclick="window.location.href='kontakt.html'">Contact Us
                 <img src="images/arrow.svg" alt="Arrow" />
@@ -98,14 +98,14 @@
                     </div>
                 </div>
                 <div class="email-info">
-                    <img src="images/phone.svg" alt="Phone Icon">
+                    <img src="images/email.svg" alt="Email Icon">
                     <div class="emailll">
                         <span class="email-label">Telefon:</span>
                         <a href="mailto:info@sim.hr" class="email-value">+385 (0)XX XXX XXXX</a>
                     </div>
                 </div>
                 <div class="email-info">
-                    <img src="images/location.svg" alt="Location Icon">
+                    <img src="images/email.svg" alt="Email Icon">
                     <div class="emailll">
                         <span class="email-label">Adresa:</span>
                         <a href="mailto:info@sim.hr" class="email-value">Ulica 108. brigade ZNG 74, 35000 Slavonski
@@ -118,55 +118,13 @@
 
 
     <main>
-        <section class="hero">
+        <section class="services-hero">
             <div class="hero-overlay"></div>
             <div class="container hero-content">
-                <h1 class="maintext">Precizna CNC Proizvodnja na<br /> Koju Možete Računati</h1>
-                <p class="maintextheading">Visokokvalitetna obrada, proizvodnja metalnih dijelova i inženjerska rješenja
-                    s točnošću,<br /> pouzdanošću
-                    i modernom tehnologijom.</p>
-                <div class="hero-btns">
-                    <button class="twobutton" onclick="window.location.href='usluge.html'">Pogledajte Naše Usluge<img
-                            src="images/buttonarrow.svg" alt="Arrow"></button>
-                    <button class="twobutton1">Zatražite ponudu</button>
-                </div>
+                <h1 class="maintext">Naši Proizvodi</h1>
+                <p class="maintextheading">Komponente izrađene po mjeri s vrhunskom preciznošću.</p>
             </div>
-
-
-
         </section>
-        <div class="secsec">
-            <img src="images/secondsec.svg" class="secsecimg" alt="Sec Image">
-            <div class="secdivsec">
-                <p class="onamatext">O NAMA</p>
-                <p class="simdooinzen">SIM d.o.o. – Inženjerska Izvrsnost</p>
-                <p class="tvrtka">Tvrtka SIM d.o.o., smještena u industrijskoj zoni Đuro Đaković u Slavonskom Brodu,
-                    specijalizirana je
-                    za preciznu obradu metalnih komponenti i naprednu CNC proizvodnju za klijente iz zapadne Europe. Naš
-                    tim inženjera i tehničara osigurava da svaki dio zadovoljava najviše standarde kvalitete i
-                    preciznosti.</p>
-                <button class="Saznajtebtn">Saznajte više o nama<img src="images/arrowsec.svg" alt="Arrow"></button>
-            </div>
-        </div>
-
-        <div class="thirdsec">
-            <div class="uslugediv">
-                <p class="uslugetext">USLUGE</p>
-                <p class="nasitext">
-                    Naši CNC kapaciteti
-                </p>
-                <p class="koristimo">Koristimo modernu CNC opremu za preciznu i pouzdanu proizvodnju metalnih
-                    komponenti. Naši strojevi
-                    omogućuju obradu složenih geometrija i rad s različitim materijalima.</p>
-                <div class="updown">
-                    <img src="images/up.svg" alt="Up" id="upBtn">
-                    <img src="images/down.svg" alt="Down" id="downBtn">
-                </div>
-            </div>
-            <div class="updowndivthree" id="cardsContainer">
-                <!-- Cards JS se aayenge -->
-            </div>
-        </div>
 
         <div class="fourthsec">
             <p class="proizvoditext">
@@ -215,21 +173,9 @@
             </div>
         </div>
 
-        <div class="fifthsec">
-            <p class="kontacttext">KONTAKT</p>
-            <p class="tehnickatexttt">Tehnička konzultacija i strojni park</p>
-            <p class="iskoristitetext">Iskoristite naše tehničko znanje i napredne CNC kapacitete za svoj projekt. Naš
-                strojni park omogućuje
-                obradu složenih komponenti s visokim standardima preciznosti i kvalitete.</p>
-            <div class="hero-btns">
-                <button class="twobutton">Zatraži konzultaciju<img src="images/buttonarrow.svg" alt="Arrow"></button>
-                <button class="twobutton1">Nazovite nas odmah</button>
-            </div>
-        </div>
-
         <div class="sixthsec">
             <div class="footerdivvvvvvvvvvv">
-                <img src="  " class="footer-logo" alt="">
+                <img src="images/fotterlogo.svg" class="footer-logo" alt="">
                 <div class="footerlinks">
                     <p class="footerlink"><a href="index.html"
                             style="color: inherit; text-decoration: none;">Naslovna</a></p>
@@ -250,7 +196,7 @@
                 </div>
             </div>
             <hr class="mainbr" />
-            <p class="copyrighttext">© 2025 SIM d.o.o.. All rights reserved.</p>
+            <p class="copyrighttext">© 2025 SIM d.o.o.. All rights reserved.</p>
 
         </div>
     </main>
@@ -279,78 +225,6 @@
             link.addEventListener('click', toggleDrawer);
         });
     </script>
-
-
-    <script>
-        const cardsData = [
-            {
-                title: "CNC Glodanje",
-                desc: "Precizna CNC glodanja.",
-                img: "images/firstimgthirdsec.jpg"
-            },
-            {
-                title: "CNC Tokarenje",
-                desc: "Precizno tokarenje.",
-                img: "images/sec.jpg"
-            },
-            {
-                title: "Bušenje i Povrtanje",
-                desc: "Kvalitetna obrada rupa.",
-                img: "images/third.jpg"
-            },
-            {
-                title: "Industrijski Strojevi",
-                desc: "Visoka preciznost.",
-                img: "images/machine1.jpg"
-            },
-            {
-                title: "Precizna Obrada",
-                desc: "Industrijsko zavarivanje.",
-                img: "images/machine2.jpg"
-            },
-
-        ];
-
-        let currentIndex = 0;
-        const cardsToShow = 3;
-        const container = document.getElementById("cardsContainer");
-
-        function renderCards() {
-            container.innerHTML = "";
-
-            for (let i = currentIndex; i < currentIndex + cardsToShow; i++) {
-                if (cardsData[i]) {
-                    container.innerHTML += `
-        <div class="updownfirstdiv">
-          <div class="updownfirstdivtextdd"
-            style="background-image: linear-gradient(180deg, rgba(0,0,0,0) 46%, rgba(0,0,0,0.7) 80%), url('${cardsData[i].img}');
-            background-size: cover; background-position: center;">
-            <p class="cncglodanje">${cardsData[i].title}</p>
-            <div class="card-desc">${cardsData[i].desc}</div>
-          </div>
-        </div>
-      `;
-                }
-            }
-        }
-
-        document.getElementById("downBtn").onclick = () => {
-            if (currentIndex + cardsToShow < cardsData.length) {
-                currentIndex++;
-                renderCards();
-            }
-        };
-
-        document.getElementById("upBtn").onclick = () => {
-            if (currentIndex > 0) {
-                currentIndex--;
-                renderCards();
-            }
-        };
-
-        renderCards();
-    </script>
-
 </body>
 
 </html>
